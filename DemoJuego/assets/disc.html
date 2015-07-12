@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>Colores</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/disc.css">
+</head>
+
+<body>
+<div class="fullwr">
+  <div class="row">
+    <div class="col col-1-2 green" data-beep="1"></div>
+    <div class="col col-1-2 red" data-beep="2"></div>
+  </div>
+  <div class="row">
+    <div class="circle">
+      <div class="stats-btns">
+        <div>Beeps: <span class="total-beeps">0</span></div>
+        <div class="btn">Enviar Reto</div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-1-2 yellow" data-beep="3"></div>
+    <div class="col col-1-2 blue" data-beep="4"></div>
+  </div>
+  <div data-action="sound"></div>  
+</div>
+
+<script src='js/jquery.min.js'></script>
+<script src='js/jquery.easing.min.js'></script>
+<script src="js/main.js"></script>
+</body>
+</html>

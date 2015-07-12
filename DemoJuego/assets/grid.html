@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>Lights and Sounds</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/grid.css">
+</head>
+
+<body>
+<div class="fullwr">
+  <div class="row">
+    <div id="color-green" class="col col-1-2 green" data-beep="1"></div>
+    <div id="color-red" class="col col-1-2 red" data-beep="2"></div>
+  </div>
+  <div class="row">
+    <div id="color-yellow" class="col col-1-2 yellow" data-beep="3"></div>
+    <div id="color-blue" class="col col-1-2 blue" data-beep="4"></div>
+  </div>
+  <div data-action="sound"></div>  
+</div>
+
+<div class="stats-btns">
+  <div><span class="total-beeps">0</span></div>
+</div>
+
+<script src='js/jquery.min.js'></script>
+<script src='js/jquery.easing.min.js'></script>
+<script src="js/main.js"></script>
+
+<audio id="green-sound">
+  <source src="sounds/1.ogg" type="audio/ogg" />
+  <source src="sounds/1.mp3" type="audio/mp3" />
+</audio>
+<audio id="red-sound">
+  <source src="sounds/2.ogg" type="audio/ogg" />
+  <source src="sounds/2.mp3" type="audio/mp3" />
+</audio>
+<audio id="yellow-sound">
+  <source src="sounds/3.ogg" type="audio/ogg" />
+  <source src="sounds/3.mp3" type="audio/mp3" />
+</audio>
+<audio id="blue-sound">
+  <source src="sounds/4.ogg" type="audio/ogg" />
+  <source src="sounds/4.mp3" type="audio/mp3" />
+</audio>
+
+
+</body>
+</html>
